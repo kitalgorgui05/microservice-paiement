@@ -1,0 +1,53 @@
+{
+  "name": "Facture",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paiee",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idEleve",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mois",
+      "otherEntityRelationshipName": "facture",
+      "relationshipName": "mois",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "reglement",
+      "otherEntityRelationshipName": "facture",
+      "relationshipName": "paiement",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20230306101256",
+  "entityTableName": "facture",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "paiementdb",
+  "applications": "*",
+  "microserviceName": "paiementdb",
+  "Lombok": true
+}

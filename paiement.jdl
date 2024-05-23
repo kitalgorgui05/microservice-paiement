@@ -1,0 +1,35 @@
+@Lombok
+entity Reglement {
+	date LocalDate required,
+    montantInscription String required,
+    mensualite String required,
+    montantCantine Long required,
+    montantTransport Long required,
+    idNiveau String required,
+    idAnnee String required
+}
+ @Lombok
+entity Facture {
+	date LocalDate required,
+    code String,
+    paiee String required,
+    idEleve String required
+}
+
+@Lombok
+entity Mois {
+	nom String required
+}
+relationship OneToMany {
+	Mois to Facture{mois}
+}
+relationship OneToMany {
+	Reglement to Facture{paiement}
+}
+
+paginate * with pagination
+
+dto * with mapstruct
+
+service all with serviceImpl
+

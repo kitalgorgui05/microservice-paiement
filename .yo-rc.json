@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.memoire.kital.raph"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "paiementdb",
+    "packageName": "com.memoire.kital.raph",
+    "packageFolder": "com/memoire/kital/raph",
+    "serverPort": "9009",
+    "authenticationType": "oauth2",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MjY0NzA2YTI2MTY2YzNlZWI4ZDQ3MDlhN2UzYWJiZjkwZjZlMmVhN2UzZmZlMTRkMDA4NTI2MzVkN2Q0ODBmMmU4ZjlhOWFhZjQxMDE1ZTBiZjI1NTZlMzRhZTdmZGJjM2RmZDU2NThkMGU2OTNmYzM1NzMwNmNmMjI4NmQzMjU=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1677955584535,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

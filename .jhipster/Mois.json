@@ -1,0 +1,31 @@
+{
+  "name": "Mois",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "facture",
+      "otherEntityRelationshipName": "mois",
+      "relationshipName": "facture"
+    }
+  ],
+  "changelogDate": "20230306101356",
+  "entityTableName": "mois",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "paiementdb",
+  "applications": "*",
+  "microserviceName": "paiementdb",
+  "Lombok": true
+}
